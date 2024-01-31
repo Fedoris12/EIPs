@@ -52,7 +52,7 @@ jobs:
           files: pr-number.txt
 
       - name: Save PR Number
-        uses: actions/upload-artifact@65d862660abb392b8c4a3d1195a2108db131dd05
+        uses: actions/upload-artifact@3a8048248f2f288c271830f8ecf2a1c5d8eb0e9a
         if: steps.check_pr_number_exists.outputs.files_exists == 'true'
         with:
           name: pr-number
